@@ -122,6 +122,7 @@ body {
 
 .active {
   font-weight: bold;
+  color: aqua;
 }
 
 .show {

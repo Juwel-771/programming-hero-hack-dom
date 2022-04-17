@@ -71,11 +71,17 @@ function markMile(checkbox, id) {
   } else {
     // back to main list
     milestonesList.appendChild(item);
-    doneList.removeChild(item);
+    doneList.removeChild(item).sort();
 
     // task - do the sorting
     // reload list
 
+    reload();
+
+  }
+
+  function reload(){
+    doneList.reverse(id);
   }
 }
 

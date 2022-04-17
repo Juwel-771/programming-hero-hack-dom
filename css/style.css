@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 :root {
-  --lightDark: #212936;
+  --lightDark: #0e6b0e;
   --dark: #141722;
   --fontPrimary: #fff;
   --green: #35bb78;
@@ -16,12 +16,12 @@
 }
 
 body {
-  background-color: var(--lightDark);
+background-color: var(--lightDark);
 }
 
 /* nav start */
 .nav {
-  background-color: var(--dark);
+  background-color: var(--lightDark);
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -48,6 +48,7 @@ body {
 
 /* Main body with grid start */
 .main {
+  background-image: url('hacked.jpg');
   display: grid;
   grid-template-columns: 2.3fr 1fr;
   grid-gap: 20px;
@@ -80,7 +81,7 @@ body {
 
 .milestones,
 .doneList {
-  background-color: var(--dark);
+  background-color: var(--lightDark);
   border-radius: 7px;
   cursor: pointer;
   max-height: 495px;
@@ -92,7 +93,7 @@ body {
 }
 
 .module {
-  background-color: var(--dark);
+  background-color: var(--lightDark);
 }
 
 .milestone,
@@ -158,5 +159,16 @@ input[type="checkbox"] {
   .milestones,
   .doneList {
     height: fit-content;
+  }
+
+  .myText{
+    color: black;
+    font-style: italic;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 5px solid blue;
+    text-align: center;
+    background-color: chartreuse;
+    border-radius: 0px 40px;
   }
 }
